@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="domevent">
+    <title>domEvent Web guee</title>
+</head>
+<body>
+    
+    <div class="modalMenu" id="modalMenu">
+
+        <span class="material-icons closeIcon" onclick="closeModal()">close</span>
+
+        <a href="#Home" onclick="closeModal()">Home</a>
+        <a href="#About" onclick="closeModal()">About</a>
+        <a href="#Showcase" onclick="closeModal()">Showcase</a>
+        <a href="#Contact" onclick="closeModal()">Contact</a>
+    </div>
+
+    <nav class="navbar">
+
+        <h3 class="brand">KJB</h3>
+        <span class="material-icons menuIcon" onclick="showModal()">menu_open</span>
+
+    </nav>
+
+    <main class="container">
+
+        <section class="home" id="Home">
+
+            <img src="./deadpol.jpg" alt="ini-foto-anjim" class="homeImage">
+            <h1 class="homeText">WEB PROFILE <br/> LIFEFOOL</h1>
+        </section>
+
+        <section class="about" id="About">
+            <span class="alertAbout">selamat datang di web sederhana ini</span>
+            <h1 class="title">About</h1>
+        </section>
+
+        <section class="showcase" id="Showcase">
+            <span class="material-icons rotateIcon">hourglass_empty</span>
+        </section>
+        
+        <section class="contact" id="Contact">
+            <h1 class="title">contact</h1>
+        </section>
+
+    </main>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
