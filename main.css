@@ -79,7 +79,8 @@ body{
 }
 .container section{
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +101,7 @@ section .title{
     align-items: center;
     gap: 40px;
     height: 100vh;
+    margin-bottom: auto;
 }
 .homeImage{
     width: 450px;
@@ -163,9 +165,24 @@ section .title{
     border-radius: 200px 0px 0px 0;
 }
 .showcase{
-    background-image: url(https:picsum.photos/seed/200/900);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+.wrapper_showcase{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    padding: 40px 40px;
+}
+.wrapper_showcase img{
+    border-radius: 200px;
+    transition-duration: 2s;
+}
+.wrapper_showcase img:hover{
+    border-radius: 10px;
+    cursor: pointer;
 }
 .rotateIcon{
     font-size: 4rem;
